@@ -1,11 +1,12 @@
 pkgbase = paxctl
 	pkgdesc = Manages various PaX related program header flags for Elf32, Elf64, binaries
 	pkgver = 0.8
-	pkgrel = 1
+	pkgrel = 2
 	url = http://pax.grsecurity.net
 	arch = i686
 	arch = x86_64
 	license = GPL
+	conflicts = paxd
 	source = http://pax.grsecurity.net/paxctl-0.8.tar.gz
 	sha256sums = b5022768ed011a95bfe1770804349bf22a6973220997687d9a9ac58263aeef80
 
