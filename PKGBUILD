@@ -5,7 +5,7 @@
 
 pkgname='paxctl'
 pkgver='0.8'
-pkgrel=2
+pkgrel=3
 pkgdesc='Manages various PaX related program header flags for Elf32, Elf64, binaries'
 url='http://pax.grsecurity.net'
 arch=('i686' 'x86_64')
@@ -13,6 +13,7 @@ license=('GPL')
 depends=()
 conflicts=('paxd')
 source=("http://pax.grsecurity.net/$pkgname-$pkgver.tar.gz")
+sha256sums=('b5022768ed011a95bfe1770804349bf22a6973220997687d9a9ac58263aeef80')
 
 prepare() {
   cd "${pkgname}-${pkgver}"
@@ -29,4 +30,3 @@ package() {
   make DESTDIR="${pkgdir}" install
 }
 
-sha256sums=('b5022768ed011a95bfe1770804349bf22a6973220997687d9a9ac58263aeef80')
